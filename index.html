@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover fundo de foto 3x4</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Remover fundo de foto</h1>
+    </header>
+
+    <main>
+        <div class="controls">
+            <label for="arquivo">Selecionar Arquivo:</label>
+            <input type="file" id="arquivo" accept="image/*">
+        </div>
+
+        <div class="desenho">
+            <h3>Foto com o fundo removido</h3>
+            <canvas id="canvas"></canvas>
+            <h3>Foto original</h3>
+            <canvas id="fotoOriginal"></canvas>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/vision_bundle.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
