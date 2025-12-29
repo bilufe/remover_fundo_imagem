@@ -16,10 +16,22 @@ h1, h2, h3 {
 }
 
 #fotoOriginal, #canvas {
-    
     max-width: 300px;
     width: auto;
     height: auto;
     margin: 2vh;
     border: 1px solid #000000;
+}
+
+#tituloFundoRemovido {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+#tituloFundoRemovido:hover {
+    color: green;
+}
+
+#canvas {
+    display: none;
 }
